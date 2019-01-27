@@ -13,9 +13,6 @@ $mobile: 500px
   @media (max-width: #{$mobile})
     @content
 
-@font-face
-    font-family: "dejavu-caps"
-    src: url("assets/fonts/BPG-DejaVu-Sans-Caps-Book.ttf")
 // ---------------------------------------------------------
 // ---------------------------------------------------------
 // ---------------------------------------------------------
@@ -97,6 +94,7 @@ header
                     li
                         padding: 5px 10px
                         a
+                            font-family: BPG-GEL-Dejavu-Sans
                             color: #fff
                             font-size: 15px
                             font-weight: 400
@@ -123,6 +121,8 @@ header
         span
             color: #fff
             font-size: 25px
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
+
             .fas
                 margin-right: 10px 
 
@@ -132,8 +132,8 @@ main
         .page-nav-title
             color: #C71F43
             text-align: center
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
             padding: 50px 0
-            font-family: "dejavu-caps"
     .news
         .each-news
             position: relative
@@ -164,6 +164,7 @@ main
                 width: 145px
                 padding: 10px 5px
                 text-align: center
+                font-family: dejavu-caps, Proxima-Nova-Extrabold
             .each-news-title
                 font-family: "dejavu-caps"
                 padding: 20px
@@ -172,6 +173,7 @@ main
                 padding: 0px 20px 50px 20px
                 font-size: 15px
                 text-align: justify 
+                font: 15px/140% BPG-GEL-Dejavu-Sans
             .each-news-readMore
                 padding: 10px 20px
                 display: flex
@@ -187,6 +189,7 @@ main
                     text-transform: capitalize
                     position: relative
                     text-align: center
+                    font-family: dejavu-caps, Proxima-Nova-Extrabold
                     &:after
                         content: ""
                         position: absolute
@@ -253,13 +256,18 @@ footer
         display: flex
         justify-content: space-between
         align-items: center
+        font-size: 15px
+        font-family: dejavu-caps, Proxima-Nova-Extrabold
     .social-title
         font-size: 20px
         color: #fff
+        font-family: dejavu-caps, Proxima-Nova-Extrabold
     .address-cont
         .addr, .phone
+            font-size: 15px
             color: #ffffff
             padding: 5px 0
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
             .fas
                 font-size: 18px
                 color: #fff
@@ -273,6 +281,8 @@ footer
             width: 100%
             margin: 25px 0px
             outline: none
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
+            
             &:focus
                 border-color: #C71F43 !important
                 box-shadow: 0 0 0 0.2rem rgba(204,51,51, .65) !important
@@ -283,6 +293,7 @@ footer
             border-radius: .25rem
             padding: .375rem .75rem
             resize: none
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
             &:focus
                 transition: height 0.6s !important
                 height: 200px
@@ -303,6 +314,7 @@ footer
             position: relative
             text-align: center
             cursor: pointer
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
             &:hover:before, &:hover:after
                     width: calc( 100% + 4px )
                     height: calc( 100% + 4px )
@@ -332,6 +344,7 @@ footer
         .addr, .phone, .mail
             color: #0B4460
             padding: 5px 0
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
             .fas
                 font-size: 18px
                 color: #C71F43
