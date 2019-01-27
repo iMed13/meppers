@@ -173,7 +173,7 @@ main
                 padding: 0px 20px 50px 20px
                 font-size: 15px
                 text-align: justify 
-                font: 15px/140% BPG-GEL-Dejavu-Sans
+                font-family: BPG-GEL-Dejavu-Sans !important
             .each-news-readMore
                 padding: 10px 20px
                 display: flex
@@ -356,4 +356,90 @@ footer
         border-radius: .25rem
         #map
             width: 100%
-              
+
+// 6.Products----------------------------------------------
+
+.products
+    .each-prod-title
+        h3
+            padding-bottom: 50px
+            text-align: center !important
+    .each-prods
+        
+        position: relative
+        margin: 20px 0
+        &:hover .each-prod-readMore a:before, &:hover .each-prod-readMore a:after
+                width: calc( 100% + 4px )
+                height: calc( 100% + 4px )
+        &:hover
+            transition: margin-top  0.3s !important
+            top: -10px
+        .each-prod-content
+            position: relative
+            &:hover
+                transition: 0.2s ease-in-out
+                box-shadow: 0px 0px 10px 0px #000 !important
+        .each-prod-image
+            height: 250px
+            background: red
+            overflow: hidden
+            img
+                object-fit: cover
+        .each-prod-date
+            background: #ed1c24
+            position: absolute
+            top: 25px
+            left: 0
+            color: #fff
+            width: 145px
+            padding: 10px 5px
+            text-align: center
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
+        .each-prod-title
+            font-family: "dejavu-caps"
+            padding: 20px
+            color: #C71F43
+        .each-prod-text
+            padding: 0px 20px 50px 20px
+            font-size: 15px
+            text-align: justify 
+            font-family: BPG-GEL-Dejavu-Sans !important
+        .each-prod-readMore
+            padding: 10px 20px
+            display: flex
+            justify-content: flex-end
+            a
+                display: block
+                width: fit-content
+                padding: 10px 30px
+                background: #fff
+                border: 2px solid #c9c7c8
+                color: #C71F43
+                text-decoration: none
+                text-transform: capitalize
+                position: relative
+                text-align: center
+                font-family: dejavu-caps, Proxima-Nova-Extrabold
+                &:after
+                    content: ""
+                    position: absolute
+                    top: -2px
+                    left: -2px
+                    width: 20px
+                    height: 20px
+                    border-color: #C71F43
+                    border-style: solid
+                    border-width: 2px 0 0 2px
+                    transition: all 0.3s
+                &:before
+                    content: ""
+                    position: absolute
+                    bottom: -2px
+                    right: -2px
+                    width: 20px
+                    height: 20px
+                    border-color: #C71F43
+                    border-style: solid
+                    border-width: 0 2px 2px 0 
+                    transition: all 0.3s
+        
