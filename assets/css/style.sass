@@ -1,0 +1,346 @@
+// MIX INS
+
+$laptop: 1200px
+$tablet: 768px
+$mobile: 500px
+=laptop
+  @media (max-width: #{$laptop})
+    @content
+=tablet
+  @media (max-width: #{$tablet})
+    @content
+=mobile
+  @media (max-width: #{$mobile})
+    @content
+
+@font-face
+    font-family: "dejavu-caps"
+    src: url("assets/fonts/BPG-DejaVu-Sans-Caps-Book.ttf")
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+    // 1.Header
+    // 2.Parallax
+    // 3.Main
+    // 4.Footer
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+
+*
+    margin: 0
+    padding: 0
+    list-style-type: none
+    box-sizing: border-box
+    text-decoration: none !important
+dl, ol, ul 
+     margin-bottom: 0rem !important
+
+
+// 1.Header------------------------------------------
+.fixed-head
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    background: #fff
+    box-shadow: 0 2px 20px -10px #000
+
+    
+header
+    padding: 40px 0
+    transition: all 0.5s
+    background: #0B4460
+    
+    .container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .header_logo
+            img
+                height: 50px
+       
+        .header_nav
+            display: flex
+            justify-content: space-between
+            align-items: center
+            
+            nav
+                display: flex
+                justify-content: space-between
+                align-items: center
+                position: relative
+                overflow: hidden
+                +laptop
+                    display: none
+                .header-search-form
+                    transition: all 0.9s
+                    width: 95%
+                    position: absolute
+                    left: -100%
+                    padding: 5px
+                    input
+                        box-shadow: 0 0 0 0.2rem rgba(204,51,51, .65)
+                        float: right
+                        width: 100%
+                        outline: none
+                        padding: 2px 20px
+                        border-radius: 10px
+                        border: none
+                .activesearch
+                    left: 0 
+                ul
+                    list-style-type: none
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    li
+                        padding: 5px 10px
+                        a
+                            color: #fff
+                            font-size: 15px
+                            font-weight: 400
+            .burger-nav
+                margin: 0 10px
+                font-size: 20px 
+                color: #fff
+                display: none
+                +laptop
+                    display: block !important
+
+
+// 2.Parallax------------------------------------------   
+.parallax-window
+    min-height: 400px
+    background: transparent
+    overflow: hidden
+    position: relative
+    .path-for-par
+        position: absolute
+        bottom: 60%
+        left: 50%
+        transform: translateX(-50%)
+        span
+            color: #fff
+            font-size: 25px
+            .fas
+                margin-right: 10px 
+
+// 3.Maine------------------------------------------
+main
+    .container
+        .page-nav-title
+            color: #C71F43
+            text-align: center
+            padding: 50px 0
+            font-family: "dejavu-caps"
+    .news
+        .each-news
+            position: relative
+            margin: 20px 0
+            &:hover .each-news-readMore a:before, &:hover .each-news-readMore a:after
+                    width: calc( 100% + 4px )
+                    height: calc( 100% + 4px )
+            &:hover
+                transition: margin-top  0.3s !important
+                top: -10px
+            .each-news-content
+                position: relative
+                &:hover
+                    transition: 0.2s ease-in-out
+                    box-shadow: 0px 0px 10px 0px #000 !important
+            .each-news-image
+                height: 250px
+                background: red
+                overflow: hidden
+                img
+                    object-fit: cover
+            .each-news-date
+                background: #ed1c24
+                position: absolute
+                top: 25px
+                left: 0
+                color: #fff
+                width: 145px
+                padding: 10px 5px
+                text-align: center
+            .each-news-title
+                font-family: "dejavu-caps"
+                padding: 20px
+                color: #C71F43
+            .each-news-text
+                padding: 0px 20px 50px 20px
+                font-size: 15px
+                text-align: justify 
+            .each-news-readMore
+                padding: 10px 20px
+                display: flex
+                justify-content: flex-end
+                a
+                    display: block
+                    width: fit-content
+                    padding: 10px 30px
+                    background: #fff
+                    border: 2px solid #c9c7c8
+                    color: #C71F43
+                    text-decoration: none
+                    text-transform: capitalize
+                    position: relative
+                    text-align: center
+                    &:after
+                        content: ""
+                        position: absolute
+                        top: -2px
+                        left: -2px
+                        width: 20px
+                        height: 20px
+                        border-color: #C71F43
+                        border-style: solid
+                        border-width: 2px 0 0 2px
+                        transition: all 0.3s
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -2px
+                        right: -2px
+                        width: 20px
+                        height: 20px
+                        border-color: #C71F43
+                        border-style: solid
+                        border-width: 0 2px 2px 0 
+                        transition: all 0.3s
+                  
+
+
+
+// 4.Footer------------------------------------------               
+footer
+    padding-top: 30px
+    background-image: linear-gradient(to right, #011d26, #011d26, #073649)
+    .social-links
+        padding: 20px 0
+        font-size: 20px
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        .fab
+            font-size: 18px
+            width: 30px
+            height: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 10px
+            border-radius: 100%
+            &:hover
+                transition: all 0.8s
+                transform: rotateY(180deg)
+        .fa-twitter
+            border: solid #00acee 1px
+            color: #00acee 
+        .fa-facebook-f
+            border: solid #3C5A99 1px
+            color: #3C5A99 
+        .fa-instagram
+            border: solid #e4405f 1px
+            color: #e4405f 
+    .copyright
+        padding: 10px 0
+        color: #FFF
+        margin-top: 20px
+        border-top: 1px solid #fff
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .social-title
+        font-size: 20px
+        color: #fff
+    .address-cont
+        .addr, .phone
+            color: #ffffff
+            padding: 5px 0
+            .fas
+                font-size: 18px
+                color: #fff
+                margin-right: 10px
+                
+// 5. Contact----------------------------------------
+.contact
+    .contact-form
+        width: 100%
+        input
+            width: 100%
+            margin: 25px 0px
+            outline: none
+            &:focus
+                border-color: #C71F43 !important
+                box-shadow: 0 0 0 0.2rem rgba(204,51,51, .65) !important
+        textarea
+            border: 1px solid #ced4da
+            margin: 10px 0px
+            width: 100%
+            border-radius: .25rem
+            padding: .375rem .75rem
+            resize: none
+            &:focus
+                transition: height 0.6s !important
+                height: 200px
+                color: #495057
+                background-color: #fff
+                border-color: #C71F43
+                outline: 0
+                box-shadow: 0 0 0 0.2rem rgba(204,51,51, .65)
+        .send-btn
+            display: block
+            width: fit-content
+            padding: 10px 30px
+            background: #fff
+            border: 2px solid #c9c7c8
+            color: #C71F43
+            text-decoration: none
+            text-transform: capitalize
+            position: relative
+            text-align: center
+            cursor: pointer
+            &:hover:before, &:hover:after
+                    width: calc( 100% + 4px )
+                    height: calc( 100% + 4px )
+            &:after
+                content: ""
+                position: absolute
+                top: -2px
+                left: -2px
+                width: 20px
+                height: 20px
+                border-color: #C71F43
+                border-style: solid
+                border-width: 2px 0 0 2px
+                transition: all 0.3s
+            &:before
+                content: ""
+                position: absolute
+                bottom: -2px
+                right: -2px
+                width: 20px
+                height: 20px
+                border-color: #C71F43
+                border-style: solid
+                border-width: 0 2px 2px 0 
+                transition: all 0.3s
+    .address-cont
+        .addr, .phone, .mail
+            color: #0B4460
+            padding: 5px 0
+            .fas
+                font-size: 18px
+                color: #C71F43
+                margin-right: 10px
+        
+    .map
+        margin: 20px 0
+        overflow: hidden
+        border-radius: .25rem
+        #map
+            width: 100%
+              
