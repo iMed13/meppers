@@ -615,4 +615,92 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.single-post-news .single-title {
+  color: #C71F43;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+  padding: 50px 15px;
+}
+
+.single-post-news .single-post-date {
+  padding: 10px 15px;
+  color: #C71F43;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.single-post-news .single-text {
+  padding-bottom: 20px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: BPG-DejaVu-San;
+}
+
+.single-post-news .single-text .share-single-post {
+  padding: 20px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-post-news .single-text .share-single-post .facebook-share {
+  background: #3C5A99;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.single-post-news .single-text .share-single-post .facebook-share:hover {
+  border-color: #3C5A99;
+  background: transparent;
+  color: #3C5A99;
+}
+
+.single-post-news .single-text .share-single-post .facebook-share span {
+  font-size: 13px;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.single-post-news .single-text .share-single-post .twitter-share {
+  background: #00acee;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.single-post-news .single-text .share-single-post .twitter-share:hover {
+  border-color: #00acee;
+  background: transparent;
+  color: #00acee;
+}
+
+.single-post-news .single-text .share-single-post .twitter-share span {
+  font-size: 13px;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.single-post-news .single-images {
+  padding-bottom: 20px;
+}
+
+.single-post-news .single-images .images > :nth-child(1) {
+  width: 100% !important;
+}
+
+.single-post-news .single-images .images img {
+  margin: 5px;
+  width: calc(20% - 10px);
+}
 /*# sourceMappingURL=style.css.map */

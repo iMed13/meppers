@@ -442,4 +442,65 @@ footer
                     border-style: solid
                     border-width: 0 2px 2px 0 
                     transition: all 0.3s
-        
+
+// 7.Single-posts------------------------------------------------------
+.single-post-news
+    .single-title
+        color: #C71F43
+        font-family: dejavu-caps, Proxima-Nova-Extrabold
+        padding: 50px 15px
+    .single-post-date
+        padding: 10px 15px
+        color: #C71F43
+        font-family: dejavu-caps, Proxima-Nova-Extrabold
+    .single-text
+        padding-bottom: 20px 
+        font-size: 15px
+        text-align: justify 
+        font-family: BPG-DejaVu-San
+        .share-single-post
+            padding: 20px 0
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            .facebook-share
+                background: #3C5A99
+                padding: 2px 10px
+                border-radius: 2px
+                color: #fff
+                margin-right: 10px
+                border: 1px solid transparent
+                cursor: pointer
+                &:hover
+                    border-color: #3C5A99
+                    background: transparent
+                    color: #3C5A99
+                span
+                    font-size: 13px
+                    font-family: dejavu-caps, Proxima-Nova-Extrabold
+
+            .twitter-share
+                background: #00acee
+                padding: 2px 10px
+                border-radius: 2px
+                color: #fff
+                margin-right: 10px 
+                border: 1px solid transparent
+                cursor: pointer
+                &:hover
+                    border-color: #00acee
+                    background: transparent
+                    color: #00acee
+                span
+                    font-size: 13px
+                    font-family: dejavu-caps, Proxima-Nova-Extrabold
+
+    .single-images
+        padding-bottom: 20px 
+        .images
+            &>:nth-child(1)
+                width: 100% !important
+            img
+                margin: 5px
+                width: calc(20% - 10px)
