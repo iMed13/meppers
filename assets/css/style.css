@@ -695,12 +695,37 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   padding-bottom: 20px;
 }
 
-.single-post-news .single-images .images > :nth-child(1) {
-  width: 100% !important;
+.single-post-news .single-images .single-gallery {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.single-post-news .single-images .images img {
+.single-post-news .single-images .single-gallery img {
+  width: 500px;
+}
+
+.single-post-news .single-images .sing__images > :nth-child(1) {
+  width: 100% !important;
+  margin: unset !important;
+}
+
+.single-post-news .single-images .sing__images img {
+  float: left;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
   margin: 5px;
-  width: calc(20% - 10px);
+  width: calc( 25% - 10px);
 }
 /*# sourceMappingURL=style.css.map */
