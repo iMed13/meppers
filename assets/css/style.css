@@ -952,24 +952,22 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 }
 
 .single-post-projects .single-project .single-proj-image .ended {
-  background: #C71F43;
-  height: 40px;
+  background: #c71f43;
   text-align: right;
   top: 100px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  padding: 10px 15px;
+  padding: 15px;
   color: #fff;
 }
 
 .single-post-projects .single-project .single-proj-image .unended {
   background: #0B4460;
-  height: 40px;
   text-align: right;
   top: 100px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  padding: 10px 15px;
+  padding: 15px;
   color: #fff;
 }
 
