@@ -695,6 +695,12 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   padding-bottom: 20px;
 }
 
+.single-post-news .single-images .active_gallery {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .single-post-news .single-images .single-gallery {
   display: none;
   position: fixed;
@@ -714,6 +720,40 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 .single-post-news .single-images .single-gallery img {
   width: 500px;
+}
+
+.single-post-news .single-images .single-gallery .gallery-exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 40px !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.single-post-news .single-images .single-gallery .gallery-exit:hover {
+  color: red;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.single-post-news .single-images .single-gallery .fas {
+  font-size: 20px;
+  color: #fff;
+  z-index: 99999;
+}
+
+.single-post-news .single-images .single-gallery .next {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+}
+
+.single-post-news .single-images .single-gallery .prev {
+  position: absolute;
+  left: 30px;
+  top: 50%;
 }
 
 .single-post-news .single-images .sing__images > :nth-child(1) {

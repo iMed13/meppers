@@ -498,6 +498,8 @@ footer
 
     .single-images
         padding-bottom: 20px
+        .active_gallery
+            display: flex !important
         .single-gallery
             display: none
             position: fixed
@@ -511,6 +513,28 @@ footer
             align-items: center
             img
                 width: 500px
+            .gallery-exit
+                position: absolute
+                top: 20px
+                right: 20px
+                color: #fff
+                font-size: 40px !important
+                transition: all 0.5s
+                &:hover
+                    color: red
+                    transform: rotate(360deg) 
+            .fas
+                font-size: 20px
+                color: #fff
+                z-index: 99999
+            .next
+                position: absolute
+                right: 30px
+                top: 50%
+            .prev
+                position: absolute
+                left: 30px
+                top: 50%
         .sing__images
             &>:nth-child(1)
                 width: 100% !important
