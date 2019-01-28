@@ -1,3 +1,23 @@
+//-- ------Steaky menu--------- -->
+window.onscroll = function() {
+    myFunction()
+};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        $("header").addClass('fixed-head');
+        $(".header_logo img").attr("src", "assets/image/black_header-logo.png ");
+        $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#0B4460");
+        $(".parallax-window").css("margin-top", "130px")
+    } else {
+        $("header").removeClass('fixed-head');
+        $(".header_logo img").attr("src", "assets/image/header-logo.png");
+        $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#fff");
+
+        $(".parallax-window").css("margin-top", "unset")
+    }
+}
+// ----------------------search active--------------------------------------
 $(".headersearch-btn").click(function() {
     $(".header-search-form").toggleClass("activesearch");
 });

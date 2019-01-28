@@ -719,7 +719,8 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 }
 
 .single-post-news .single-images .single-gallery img {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .single-post-news .single-images .single-gallery .gallery-exit {
