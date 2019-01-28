@@ -1052,9 +1052,14 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: fit-content;
-  padding: 10px 30px;
+  padding: 10px 20px;
   background: #fff;
   border: 2px solid #c9c7c8;
   color: #C71F43;
@@ -1063,6 +1068,13 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   position: relative;
   text-align: center;
   font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.single-post-projects .single-project .single-proj-category .cat-item a img {
+  width: 50px;
+  height: 50px;
+  background: red;
+  margin-right: 10px;
 }
 
 .single-post-projects .single-project .single-proj-category .cat-item a:after {
