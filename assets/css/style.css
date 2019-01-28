@@ -118,7 +118,7 @@ header .container .header_nav nav ul li {
 }
 
 header .container .header_nav nav ul li a {
-  font-family: BPG-GEL-Dejavu-Sans;
+  font-family: BPG-DejaVu-San;
   color: #fff;
   font-size: 15px;
   font-weight: 400;
@@ -229,7 +229,7 @@ main .news .each-news .each-news-text {
   padding: 0px 20px 50px 20px;
   font-size: 15px;
   text-align: justify;
-  font-family: BPG-GEL-Dejavu-Sans !important;
+  font-family: BPG-DejaVu-San;
 }
 
 main .news .each-news .each-news-readMore {
@@ -559,7 +559,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   padding: 0px 20px 50px 20px;
   font-size: 15px;
   text-align: justify;
-  font-family: BPG-GEL-Dejavu-Sans !important;
+  font-family: BPG-DejaVu-San;
 }
 
 .products .each-prods .each-prod-readMore {
