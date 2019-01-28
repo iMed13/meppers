@@ -1134,4 +1134,38 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 .single-post-projects .proj-arrow .fa-arrow-left {
   margin-right: 10px;
 }
+
+.services .sevice-content p {
+  text-align: justify;
+}
+
+.services .service-item {
+  margin: 20px 0;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid red;
+}
+
+.services .service-item .item-icon img {
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+}
+
+.services .service-item .item-title {
+  font-size: 20px;
+  color: #C71F43;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
 /*# sourceMappingURL=style.css.map */
