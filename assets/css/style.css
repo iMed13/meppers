@@ -1187,6 +1187,11 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   text-align: center !important;
 }
 
+.aboutus .aboutus-text {
+  text-align: justify;
+  font-family: BPG-DejaVu-San;
+}
+
 .aboutus .aboutus-team .team-member {
   margin: 10px 0;
 }
