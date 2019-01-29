@@ -152,6 +152,19 @@ header .container .header_nav .burger-nav {
           transform: translateX(-50%);
 }
 
+@media (max-width: 1200px) {
+  .parallax-window .path-for-par {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
 .parallax-window .path-for-par span {
   color: #fff;
   font-size: 25px;
@@ -1167,5 +1180,78 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   font-size: 20px;
   color: #C71F43;
   font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.aboutus h1 {
+  width: 100%;
+  text-align: center !important;
+}
+
+.aboutus .aboutus-team .team-member {
+  margin: 10px 0;
+}
+
+.aboutus .aboutus-team .team-member .member-image {
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.aboutus .aboutus-team .team-member .member-image:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 100px;
+  height: 200px;
+  border-color: #C71F43;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.aboutus .aboutus-team .team-member .member-image:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 50px;
+  height: 200px;
+  border-color: #C71F43;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.aboutus .aboutus-team .team-member .member-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutus .aboutus-team .team-member .member-fullname p {
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  background: #C91F44;
+  color: #fff;
+  width: 90%;
+  padding: 10px;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.aboutus .aboutus-team .team-member .member-info {
+  border: 2px solid #C91F44;
+}
+
+.aboutus .aboutus-team .team-member .member-info .member-proffesion, .aboutus .aboutus-team .team-member .member-info .member-mail {
+  color: #C91F44 !important;
+  padding: 10px;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.aboutus .aboutus-team .team-member .member-info .member-proffesion .fas, .aboutus .aboutus-team .team-member .member-info .member-mail .fas {
+  color: #0C4460;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

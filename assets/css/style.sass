@@ -118,6 +118,11 @@ header
         bottom: 60%
         left: 50%
         transform: translateX(-50%)
+        +laptop
+            width: 100%
+            display: flex
+            justify-content: center
+            text-align: center
         span
             color: #fff
             font-size: 25px
@@ -837,3 +842,60 @@ footer
             font-size: 20px
             color: #C71F43
             font-family: dejavu-caps, Proxima-Nova-Extrabold
+
+
+
+//11.Aboutus-----------------------------------------------
+.aboutus
+    h1
+        width: 100%
+        text-align: center !important
+    .aboutus-team
+        .team-member
+            margin: 10px 0
+            .member-image
+                margin-bottom: 10px
+                text-align: center
+                position: relative
+                &:after
+                    content: ""
+                    position: absolute
+                    bottom: -2px
+                    right: -2px
+                    width: 100px
+                    height: 200px
+                    border-color: #C71F43
+                    border-style: solid
+               
+                    border-width: 0 2px 2px 0
+                    transition: all 0.3s
+                &:before
+                    content: ""
+                    position: absolute
+                    top: -2px
+                    left: -2px
+                    width: 50px
+                    height: 200px
+                    border-color: #C71F43
+                    border-style: solid
+                    border-width: 2px 0 0 2px
+                    transition: all 0.3s
+                img
+                    object-fit: cover
+            .member-fullname
+                p
+                    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+                    background: #C91F44
+                    color: #fff
+                    width: 90%
+                    padding: 10px
+                    font-family: dejavu-caps, Proxima-Nova-Extrabold
+            .member-info
+                border: 2px solid #C91F44
+                .member-proffesion, .member-mail
+                    .fas
+                        color: #0C4460
+                        margin-right: 10px
+                    color: #C91F44 !important
+                    padding: 10px
+                    font-family: dejavu-caps, Proxima-Nova-Extrabold
