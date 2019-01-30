@@ -1195,6 +1195,10 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   font-family: BPG-DejaVu-San;
 }
 
+.aboutus .aboutus-team {
+  margin: 0 auto;
+}
+
 .aboutus .aboutus-team .team-member {
   margin: 15px 0;
 }
@@ -1236,6 +1240,15 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 .aboutus .aboutus-team .team-member .member-image img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .aboutus .aboutus-team .team-member .member-image img {
+    -o-object-fit: unset !important;
+       object-fit: unset !important;
+    width: 100%;
+    margin: 10px;
+  }
 }
 
 .aboutus .aboutus-team .team-member .member-fullname p {
@@ -1331,7 +1344,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 @media (max-width: 1000px) {
   .products-table .prodcuts-choosen-prod-content, .single-products-table .prodcuts-choosen-prod-content {
-    margin-top: 20px !important;
+    margin: 20px !important;
   }
 }
 
@@ -1359,7 +1372,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 @media (max-width: 1000px) {
   .single-products-table .choosen-product {
-    margin-top: 20px;
+    margin: 20px;
   }
 }
 
