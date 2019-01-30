@@ -1,4 +1,3 @@
-
 // ----------------------on windows scroll changes---------------------------------------
 //-- ------Steaky menu--------- -->
 window.onscroll = function() {
@@ -62,7 +61,12 @@ $(".single-gallery .prev").click(function() {
     $(".single-gallery img").attr("src", imgs[i].getAttribute("src"));
 });
 
-$(".burger-nav").click(function(){
+$(".burger-nav").click(function() {
     $("header .header_nav nav").toggleClass("active_header_menu");
     $("header .header_nav nav").toggleClass("menu_transition_top");
+});
+// --------------Project tab click----------------------
+$(".prod-nav li a").click(function() {
+    $(this).parent().siblings().children().removeClass("active_prod_cat");
+    $(this).addClass("active_prod_cat");
 });
