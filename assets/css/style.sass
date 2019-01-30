@@ -908,7 +908,7 @@ footer
 
 
 //11.Products-Table-----------------------------------------------
-.products-table
+.products-table, .single-products-table
     margin: 20px 0
     .active_prod_cat
         color: #C91F44 !important
@@ -958,3 +958,78 @@ footer
 
 
 //11.Single Products-----------------------------------------------
+.single-products-table
+    .choosen-product
+        margin-top: 20px
+        box-shadow: 0px 0px 10px 0px #f5f4f4 
+        display: flex
+        justify-content: center
+        .each-prod-content
+            text-align: center
+            .each-prod-image
+                max-width: 80%
+                margin: 20px auto
+                width: 100%
+                overflow: hidden
+                img
+                    object-fit: cover
+            .pined-file
+                a
+                    margin: 10px auto
+                    padding: 10px
+                    width: fit-content !important
+                    display: flex
+                    align-items: center
+                    width: fit-content
+                    padding: 10px 20px
+                    background: #fff
+                    border: 2px solid #c9c7c8
+                    color: #C71F43
+                    text-decoration: none
+                    text-transform: capitalize
+                    position: relative
+                    text-align: center
+                    font-family: dejavu-caps, Proxima-Nova-Extrabold
+                    .fa-file-pdf
+                        margin-left: 20px
+                        font-size: 25px
+                        font-weight: normal
+                    &:after
+                        content: ""
+                        position: absolute
+                        top: -2px
+                        left: -2px
+                        width: 20px
+                        height: 20px
+                        border-color: #C71F43
+                        border-style: solid
+                        border-width: 2px 0 0 2px
+                        transition: all 0.3s
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -2px
+                        right: -2px
+                        width: 20px
+                        height: 20px
+                        border-color: #C71F43
+                        border-style: solid
+                        border-width: 0 2px 2px 0 
+                        transition: all 0.3s
+                    &:hover:before, &:hover:after
+                        width: calc( 100% + 4px )
+                        height: calc( 100% + 4px )
+            .each-prod-title
+                width: 80%
+                margin: 0 auto
+                h4
+                    text-align: center !important
+                    padding: 20px 0
+                    font-size: 20px
+            .each-prod-description
+                padding: 20px 0
+                text-align: justify
+                width: 90%
+                margin: 0 auto
+                text-transform: uppercase
+                font-size: 16px
