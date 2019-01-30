@@ -905,6 +905,20 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
           transform: translateX(-50%);
 }
 
+.projects .each-projs .each-proj-content:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 50%;
+  height: 50%;
+  border-color: #C71F43;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .projects .each-projs .each-proj-image {
   height: 250px;
   background: red;

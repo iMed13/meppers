@@ -636,6 +636,18 @@ footer
             width: 80%
             left: 50%
             transform: translateX(-50%)
+            &:after
+                content: ""
+                position: absolute
+                bottom: -2px
+                right: -2px
+                width: 50%
+                height: 50%
+                border-color: #C71F43
+                border-style: solid
+                border-width: 0 2px 2px 0
+                transition: all 0.3s
+                
         .each-proj-image
             height: 250px
             background: red
