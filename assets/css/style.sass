@@ -46,7 +46,8 @@ dl, ol, ul
     background: #fff
     box-shadow: 0 2px 20px -10px #000
 
-    
+main
+    overflow: hidden !important
 header
     padding: 40px 0
     transition: all 0.5s
@@ -122,7 +123,6 @@ header
                                 display: flex
                                 align-items: center
                                 padding: 10px 20px
-                                background: #fff
                                 border: 2px solid #c9c7c8
                                 color: #C71F43
                                 position: relative
@@ -1021,16 +1021,17 @@ footer
 .single-products-table
     .choosen-product
         +laptop_low
-            margin: 20px
+            margin: 20px 0
         box-shadow: 0px 0px 10px 0px #f5f4f4 
         display: flex
         justify-content: center
         .each-prod-content
+            width: 100%
             text-align: center
             .each-prod-image
                 max-width: 80%
                 margin: 20px auto
-                width: 100%
+                width: 100% !important
                 overflow: hidden
                 img
                     object-fit: cover
@@ -1043,7 +1044,6 @@ footer
                     align-items: center
                     width: fit-content
                     padding: 10px 20px
-                    background: #fff
                     border: 2px solid #c9c7c8
                     color: #C71F43
                     text-decoration: none

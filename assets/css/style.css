@@ -22,6 +22,10 @@ dl, ol, ul {
           box-shadow: 0 2px 20px -10px #000;
 }
 
+main {
+  overflow: hidden !important;
+}
+
 header {
   padding: 40px 0;
   -webkit-transition: all 0.5s;
@@ -167,7 +171,6 @@ header .container .header_nav nav ul li a {
         -ms-flex-align: center;
             align-items: center;
     padding: 10px 20px;
-    background: #fff;
     border: 2px solid #c9c7c8;
     color: #C71F43;
     position: relative;
@@ -1452,18 +1455,19 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 @media (max-width: 1000px) {
   .single-products-table .choosen-product {
-    margin: 20px;
+    margin: 20px 0;
   }
 }
 
 .single-products-table .choosen-product .each-prod-content {
+  width: 100%;
   text-align: center;
 }
 
 .single-products-table .choosen-product .each-prod-content .each-prod-image {
   max-width: 80%;
   margin: 20px auto;
-  width: 100%;
+  width: 100% !important;
   overflow: hidden;
 }
 
@@ -1486,7 +1490,6 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
           align-items: center;
   width: fit-content;
   padding: 10px 20px;
-  background: #fff;
   border: 2px solid #c9c7c8;
   color: #C71F43;
   text-decoration: none;
