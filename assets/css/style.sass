@@ -1,6 +1,7 @@
 // MIX INS
 
 $laptop: 1200px
+$laptop_low: 1000px
 $tablet: 768px
 $mobile: 500px
 =laptop
@@ -12,7 +13,9 @@ $mobile: 500px
 =mobile
   @media (max-width: #{$mobile})
     @content
-
+=laptop_low
+  @media (max-width: #{$laptop_low})
+    @content
 // ---------------------------------------------------------
 // ---------------------------------------------------------
 // ---------------------------------------------------------
@@ -909,7 +912,6 @@ footer
 
 //11.Products-Table-----------------------------------------------
 .products-table, .single-products-table
-    margin: 20px 0
     .active_prod_cat
         color: #C91F44 !important
         background: #f5f4f4
@@ -948,6 +950,8 @@ footer
                             transition: all .4s ease-in-out
                             right: 5px !important
     .prodcuts-choosen-prod-content
+        +laptop_low
+            margin-top: 20px !important
         box-shadow: 0px 0px 10px 0px #f5f4f4 
         .each-prod-content
             border: 1px solid #f5f4f4
@@ -960,7 +964,8 @@ footer
 //11.Single Products-----------------------------------------------
 .single-products-table
     .choosen-product
-        margin-top: 20px
+        +laptop_low
+            margin-top: 20px
         box-shadow: 0px 0px 10px 0px #f5f4f4 
         display: flex
         justify-content: center
