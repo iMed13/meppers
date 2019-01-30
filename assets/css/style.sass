@@ -150,6 +150,7 @@ main
                 transition: margin-top  0.3s !important
                 top: -10px
             .each-news-content
+                background: #fff
                 position: relative
                 &:hover
                     transition: 0.2s ease-in-out
@@ -364,7 +365,7 @@ footer
 
 // 6.Products----------------------------------------------
 
-.products
+.products, .prodcuts-choosen-prod-content
     .each-prod-title
         h3
             padding-bottom: 50px
@@ -380,6 +381,7 @@ footer
             transition: margin-top  0.3s !important
             top: -10px
         .each-prod-content
+            background: #fff !important
             position: relative
             &:hover
                 transition: 0.2s ease-in-out
@@ -902,3 +904,57 @@ footer
                     color: #C91F44 !important
                     padding: 10px
                     font-family: dejavu-caps, Proxima-Nova-Extrabold
+
+
+
+//11.Products-Table-----------------------------------------------
+.products-table
+    margin: 20px 0
+    .active_prod_cat
+        color: #C91F44 !important
+        background: #f5f4f4
+        &:after
+            right: 5px !important
+    .prodcuts-tab-menu
+        .prod-nav
+            border: 2px solid #e0e0e0;
+            border-radius: 5px
+            ul
+                list-style-type: none
+                li
+                    width: 100%
+                    a
+                        display: flex
+                        align-items: center
+                        padding: 15px
+                        vertical-align: middle
+                        text-decoration: none
+                        color: grey 
+                        font-family: dejavu-caps, Proxima-Nova-Extrabold
+                        font-size: 18px
+                        border-top: 2px solid #e0e0e0;
+                        transition: all .2s ease-in-out
+                        position: relative
+                        &:after
+                            content: "⯈"
+                            position: absolute
+                            right: 30px
+                            top: 50%
+                            transform: translateY(-50%)
+                        &:hover, 
+                            color: #C91F44
+                            background: #f5f4f4 
+                        &:hover:after
+                            transition: all .4s ease-in-out
+                            right: 5px !important
+    .prodcuts-choosen-prod-content
+        box-shadow: 0px 0px 10px 0px #f5f4f4 
+        .each-prod-content
+            border: 1px solid #f5f4f4
+            &:hover
+                transition: 0.2s ease-in-out
+                box-shadow: unset !important
+                    
+
+
+//11.Single Products-----------------------------------------------
