@@ -57,6 +57,22 @@ header .container .header_nav {
           align-items: center;
 }
 
+header .container .header_nav .active_header_menu {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  top: 115px;
+  left: -100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+}
+
+header .container .header_nav .menu_transition_top {
+  left: 0 !important;
+}
+
 header .container .header_nav nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +89,8 @@ header .container .header_nav nav {
 
 @media (max-width: 1200px) {
   header .container .header_nav nav {
+    -webkit-transition: left 0.5s  !important;
+    transition: left 0.5s  !important;
     display: none;
   }
 }
@@ -114,6 +132,16 @@ header .container .header_nav nav ul {
           align-items: center;
 }
 
+@media (max-width: 1200px) {
+  header .container .header_nav nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 header .container .header_nav nav ul li {
   padding: 5px 10px;
 }
@@ -123,6 +151,58 @@ header .container .header_nav nav ul li a {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  header .container .header_nav nav ul li a {
+    margin: 10px auto;
+    padding: 10px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px solid #c9c7c8;
+    color: #C71F43;
+    position: relative;
+    text-align: center;
+  }
+  header .container .header_nav nav ul li a:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+    border-color: #C71F43;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  header .container .header_nav nav ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 20px;
+    height: 20px;
+    border-color: #C71F43;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  header .container .header_nav nav ul li a:hover:before, header .container .header_nav nav ul li a:hover:after {
+    width: calc( 100% + 4px);
+    height: calc( 100% + 4px);
+  }
 }
 
 header .container .header_nav .burger-nav {

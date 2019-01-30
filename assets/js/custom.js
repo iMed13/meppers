@@ -1,3 +1,5 @@
+
+// ----------------------on windows scroll changes---------------------------------------
 //-- ------Steaky menu--------- -->
 window.onscroll = function() {
     myFunction()
@@ -58,4 +60,9 @@ $(".single-gallery .prev").click(function() {
         i = imglen - 1;
     }
     $(".single-gallery img").attr("src", imgs[i].getAttribute("src"));
+});
+
+$(".burger-nav").click(function(){
+    $("header .header_nav nav").toggleClass("active_header_menu");
+    $("header .header_nav nav").toggleClass("menu_transition_top");
 });
