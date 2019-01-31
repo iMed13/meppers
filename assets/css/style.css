@@ -1550,7 +1550,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 @media (max-width: 1000px) {
   .products-table .prodcuts-choosen-prod-content, .single-products-table .prodcuts-choosen-prod-content {
-    margin: 20px !important;
+    margin: 20px 0 !important;
   }
 }
 
