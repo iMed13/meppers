@@ -220,7 +220,7 @@ header .container .header_nav nav ul li a {
 
 @media (max-width: 500px) {
   header .container .header_nav nav ul li a {
-    padding: 2px 20px;
+    padding: 5px 20px;
   }
 }
 
