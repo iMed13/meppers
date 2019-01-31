@@ -11,13 +11,17 @@ function myFunction() {
         $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#0B4460");
         $(".parallax-window").css("margin-top", "130px");
         $(".burger-nav").css("color","#0B4460");
-        $("header .header_nav nav").removeClass("active_header_menu");
     } else {
         $("header").removeClass('fixed-head');
         $(".header_logo img").attr("src", "assets/image/header-logo.png");
         $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#fff");
         $(".burger-nav").css("color","#fff");
         $(".parallax-window").css("margin-top", "unset");
+    };
+    
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+    {
+        $("header .header_nav nav").removeClass("active_header_menu");
     }
 }
 // ----------------------search active--------------------------------------
