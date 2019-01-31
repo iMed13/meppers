@@ -735,7 +735,6 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 .products .each-prods .each-prod-image, .prodcuts-choosen-prod-content .each-prods .each-prod-image {
   height: 250px;
-  background: red;
   overflow: hidden;
 }
 
@@ -1679,5 +1678,183 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+.index-content {
+  min-height: 100vh !important;
+  height: 100%;
+  position: relative;
+}
+
+.index-content:after {
+  display: none !important;
+}
+
+.index-content .par-left {
+  background: rgba(199, 31, 67, 0.7);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-content .par-left h1 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 700;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.index-content .par-right {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-content .par-right .right-content {
+  text-align: center;
+}
+
+.index-content .par-right .right-content .par-image img {
+  max-width: 70%;
+  width: 100%;
+}
+
+.index-content .par-right .right-content .div-slug {
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 700;
+}
+
+.index-prods {
+  overflow: unset !important;
+}
+
+.index-prods #demos .item .each-prod-readMore {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index-prods #demos .owl-prev {
+  outline: none;
+  position: absolute;
+  z-index: 9999999;
+  left: -60px;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  background: rgba(252, 52, 52, 0.1);
+  border-radius: 100%;
+}
+
+.index-prods #demos .owl-prev span {
+  color: #fff;
+  position: relative;
+  z-index: 99999;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.index-prods #demos .owl-prev:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(252, 52, 52, 0.2);
+  border-radius: 100%;
+}
+
+.index-prods #demos .owl-prev:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 25px;
+  height: 25px;
+  background: rgba(252, 52, 52, 0.8);
+  border-radius: 100%;
+}
+
+.index-prods #demos .owl-prev:hover:before {
+  width: 40px;
+  height: 40px;
+}
+
+.index-prods #demos .owl-next {
+  outline: none;
+  position: absolute;
+  z-index: 9999999;
+  right: -60px;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  background: rgba(252, 52, 52, 0.1);
+  border-radius: 100%;
+}
+
+.index-prods #demos .owl-next span {
+  color: #fff;
+  position: relative;
+  z-index: 99999;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.index-prods #demos .owl-next:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(252, 52, 52, 0.2);
+  border-radius: 100%;
+}
+
+.index-prods #demos .owl-next:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 25px;
+  height: 25px;
+  background: rgba(252, 52, 52, 0.8);
+  border-radius: 100%;
+}
+
+.index-prods #demos .owl-next:hover:before {
+  width: 40px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
