@@ -228,7 +228,18 @@ header .container .header_nav .burger-nav {
   position: relative;
 }
 
+.parallax-window:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .parallax-window .path-for-par {
+  z-index: 99;
   position: absolute;
   bottom: 60%;
   left: 50%;
@@ -255,8 +266,18 @@ header .container .header_nav .burger-nav {
   font-family: dejavu-caps, Proxima-Nova-Extrabold;
 }
 
+.parallax-window .path-for-par span span {
+  color: #fff;
+  font-size: 25px;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.parallax-window .path-for-par span span .fas {
+  margin: 0 10px;
+}
+
 .parallax-window .path-for-par span .fas {
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 main .container .page-nav-title {
