@@ -70,7 +70,7 @@ header .container .header_nav .active_header_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: red;
+  background: #fff;
 }
 
 header .container .header_nav .menu_transition_top {
@@ -150,6 +150,12 @@ header .container .header_nav nav ul li {
   padding: 5px 10px;
 }
 
+@media (max-width: 1200px) {
+  header .container .header_nav nav ul li {
+    width: 80%;
+  }
+}
+
 header .container .header_nav nav ul li a {
   font-family: BPG-DejaVu-San;
   color: #fff;
@@ -159,11 +165,9 @@ header .container .header_nav nav ul li a {
 
 @media (max-width: 1200px) {
   header .container .header_nav nav ul li a {
-    margin: 10px auto;
+    font-family: dejavu-caps, Proxima-Nova-Extrabold;
     padding: 10px;
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
+    width: 100% !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,7 +176,7 @@ header .container .header_nav nav ul li a {
             align-items: center;
     padding: 10px 20px;
     border: 2px solid #c9c7c8;
-    color: #C71F43;
+    color: #C71F43 !important;
     position: relative;
     text-align: center;
   }
@@ -181,7 +185,7 @@ header .container .header_nav nav ul li a {
     position: absolute;
     top: -2px;
     left: -2px;
-    width: 20px;
+    width: 60px;
     height: 20px;
     border-color: #C71F43;
     border-style: solid;
@@ -194,7 +198,7 @@ header .container .header_nav nav ul li a {
     position: absolute;
     bottom: -2px;
     right: -2px;
-    width: 20px;
+    width: 60px;
     height: 20px;
     border-color: #C71F43;
     border-style: solid;
@@ -1067,7 +1071,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 .single-post-projects .single-project .single-proj-image {
   position: relative;
-  height: 450px;
+  max-height: 450px;
   overflow: hidden;
 }
 
@@ -1176,6 +1180,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 50px 0;
 }
 
 .single-post-projects .single-project .single-proj-category .cat-item a {
@@ -1330,8 +1335,8 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 .aboutus .aboutus-team .team-member .member-image:after {
   content: "";
   position: absolute;
-  bottom: -2px;
-  right: -2px;
+  bottom: 0;
+  right: 0;
   width: 100px;
   height: 200px;
   border-color: #C71F43;
@@ -1344,8 +1349,8 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 .aboutus .aboutus-team .team-member .member-image:before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0;
+  left: 0;
   width: 50px;
   height: 200px;
   border-color: #C71F43;

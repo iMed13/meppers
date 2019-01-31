@@ -73,7 +73,7 @@ header
                 top: 115px
                 left: -100%
                 display: flex
-                background: red
+                background: #fff
             .menu_transition_top
                 left: 0 !important
             nav
@@ -111,20 +111,22 @@ header
                         width: 100%
                     li
                         padding: 5px 10px
+                        +laptop
+                            width: 80%
                         a
                             font-family: BPG-DejaVu-San
                             color: #fff
                             font-size: 15px
                             font-weight: 400
                             +laptop
-                                margin: 10px auto
+                                font-family: dejavu-caps, Proxima-Nova-Extrabold
                                 padding: 10px
-                                width: fit-content !important
+                                width: 100% !important
                                 display: flex
                                 align-items: center
                                 padding: 10px 20px
                                 border: 2px solid #c9c7c8
-                                color: #C71F43
+                                color: #C71F43 !important
                                 position: relative
                                 text-align: center
                                 &:after
@@ -132,7 +134,7 @@ header
                                     position: absolute
                                     top: -2px
                                     left: -2px
-                                    width: 20px
+                                    width: 60px
                                     height: 20px
                                     border-color: #C71F43
                                     border-style: solid
@@ -143,7 +145,7 @@ header
                                     position: absolute
                                     bottom: -2px
                                     right: -2px
-                                    width: 20px
+                                    width: 60px
                                     height: 20px
                                     border-color: #C71F43
                                     border-style: solid
@@ -768,7 +770,7 @@ footer
     .single-project
         .single-proj-image
             position: relative
-            height: 450px
+            max-height: 450px
             overflow: hidden
             img
                 width: 100%
@@ -841,6 +843,7 @@ footer
             display: flex
             justify-content: flex-start
             flex-wrap: wrap
+            padding: 50px 0
             .cat-item
                 a
                     margin: 10px
@@ -948,8 +951,8 @@ footer
                 &:after
                     content: ""
                     position: absolute
-                    bottom: -2px
-                    right: -2px
+                    bottom: 0
+                    right: 0
                     width: 100px
                     height: 200px
                     border-color: #C71F43
@@ -960,8 +963,8 @@ footer
                 &:before
                     content: ""
                     position: absolute
-                    top: -2px
-                    left: -2px
+                    top: 0
+                    left: 0
                     width: 50px
                     height: 200px
                     border-color: #C71F43
