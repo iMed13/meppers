@@ -9,13 +9,14 @@ function myFunction() {
         $("header").addClass('fixed-head');
         $(".header_logo img").attr("src", "assets/image/black_header-logo.png ");
         $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#0B4460");
-        $(".parallax-window").css("margin-top", "130px")
+        $(".parallax-window").css("margin-top", "130px");
+        $(".burger-nav").css("color","#0B4460")
     } else {
         $("header").removeClass('fixed-head');
         $(".header_logo img").attr("src", "assets/image/header-logo.png");
         $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#fff");
-
-        $(".parallax-window").css("margin-top", "unset")
+        $(".burger-nav").css("color","#fff");
+        $(".parallax-window").css("margin-top", "unset");
     }
 }
 // ----------------------search active--------------------------------------
@@ -63,10 +64,17 @@ $(".single-gallery .prev").click(function() {
 
 $(".burger-nav").click(function() {
     $("header .header_nav nav").toggleClass("active_header_menu");
-    $("header .header_nav nav").toggleClass("menu_transition_top");
+    $("header .header_nav nav li").toggleClass("activeLi");
 });
 // --------------Project tab click----------------------
 $(".prod-nav li a").click(function() {
     $(this).parent().siblings().children().removeClass("active_prod_cat");
     $(this).addClass("active_prod_cat");
 });
+
+$( window ).resize(function() {
+    if($( window ).outerWidth() >= 1200)
+    {
+        $("header .header_nav nav").removeClass("active_header_menu");
+    }
+  });

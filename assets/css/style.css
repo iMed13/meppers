@@ -62,25 +62,18 @@ header .container .header_nav {
 }
 
 header .container .header_nav .active_header_menu {
-  position: fixed;
   z-index: 99999;
-  width: 100%;
-  top: 115px;
-  left: -100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fff;
-}
-
-header .container .header_nav .menu_transition_top {
-  left: 0 !important;
+  left: 50%;
+  -webkit-transition: left 0.5s ease-in-out !important;
+  transition: left 0.5s ease-in-out !important;
 }
 
 header .container .header_nav nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: transparent;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -88,14 +81,21 @@ header .container .header_nav nav {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  left: none !important;
   overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   header .container .header_nav nav {
-    -webkit-transition: left 0.5s  !important;
-    transition: left 0.5s  !important;
-    display: none;
+    background: #fff;
+    top: 130px;
+    left: -100%;
+    position: absolute;
+    max-width: 600px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: left 0.5s ease-in-out !important;
+    transition: left 0.5s ease-in-out !important;
   }
 }
 
@@ -146,6 +146,10 @@ header .container .header_nav nav ul {
   }
 }
 
+header .container .header_nav nav ul .activeLi {
+  left: unset;
+}
+
 header .container .header_nav nav ul li {
   padding: 5px 10px;
 }
@@ -154,6 +158,9 @@ header .container .header_nav nav ul li {
   header .container .header_nav nav ul li {
     width: 80%;
     margin: 2px 5px;
+    position: relative;
+    -webkit-transition: all 0.5s !important;
+    transition: all 0.5s !important;
   }
 }
 
@@ -229,6 +236,7 @@ header .container .header_nav .burger-nav {
   font-size: 20px;
   color: #fff;
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
