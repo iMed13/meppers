@@ -24,9 +24,6 @@ function myFunction() {
 $(".headersearch-btn").click(function() {
     $(".header-search-form").toggleClass("activesearch");
 });
-$(".header-search-form").click(function() {
-    $(this).removeClass("activesearch");
-});
 // ----------gallery images-------------------------
 
 $(".sing__images img").addClass("gallery-img");
@@ -80,4 +77,22 @@ $( window ).resize(function() {
     {
         $("header .header_nav nav").removeClass("active_header_menu");
     }
+  });
+//   ----------------Language bar activation-----------------------
+
+    $( ".lang_bar" ).children().on("click", function() {
+
+        $(this).siblings().removeClass("deactive_lang");
+        $(this).siblings().addClass("active_lang");
+        $(this).removeClass("active_lang");
+        $(this).addClass("deactive_lang");
+        
+
+  });
+  
+  $( ".lang_bar" ).on("mousemove", function() {
+    $( ".active_lang" ).css("transform","rotate(180deg)")
+  });
+  $( ".lang_bar" ).on("mouseout", function() {
+    $( ".active_lang" ).css("transform","rotate(0deg)")
   });

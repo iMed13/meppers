@@ -12,6 +12,10 @@ dl, ol, ul {
   margin-bottom: 0rem !important;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .fixed-head {
   position: fixed;
   top: 0;
@@ -82,7 +86,6 @@ header .container .header_nav nav {
           align-items: center;
   position: relative;
   left: none !important;
-  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -101,11 +104,12 @@ header .container .header_nav nav {
 }
 
 header .container .header_nav nav .header-search-form {
-  -webkit-transition: all 0.9s;
-  transition: all 0.9s;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   width: 95%;
   position: absolute;
-  left: -100%;
+  left: -200%;
   padding: 5px;
 }
 
@@ -132,7 +136,7 @@ header .container .header_nav nav .header-search-form input {
   float: right;
   width: 100%;
   outline: none;
-  padding: 2px 20px;
+  padding: 2px 35px 2px 20px;
   border-radius: 10px;
   border: none;
 }
@@ -146,6 +150,7 @@ header .container .header_nav nav .header-search-form input {
 }
 
 header .container .header_nav nav .activesearch {
+  opacity: 1;
   left: 0;
 }
 
@@ -182,8 +187,28 @@ header .container .header_nav nav ul .activeLi {
   left: unset;
 }
 
+header .container .header_nav nav ul .lang_bar {
+  margin: 0 10px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+header .container .header_nav nav ul .lang_bar .active_lang {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 5 !important;
+}
+
+header .container .header_nav nav ul .lang_bar img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 header .container .header_nav nav ul li {
   padding: 5px 10px;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
