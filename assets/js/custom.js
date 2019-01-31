@@ -24,6 +24,9 @@ function myFunction() {
 $(".headersearch-btn").click(function() {
     $(".header-search-form").toggleClass("activesearch");
 });
+$(".header-search-form").click(function() {
+    $(this).removeClass("activesearch");
+});
 // ----------gallery images-------------------------
 
 $(".sing__images img").addClass("gallery-img");
@@ -65,7 +68,6 @@ $(".single-gallery .prev").click(function() {
 
 $(".burger-nav").click(function() {
     $("header .header_nav nav").toggleClass("active_header_menu");
-    $("header .header_nav nav li").toggleClass("activeLi");
 });
 // --------------Project tab click----------------------
 $(".prod-nav li a").click(function() {

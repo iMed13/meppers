@@ -87,11 +87,12 @@ header .container .header_nav nav {
 
 @media (max-width: 1200px) {
   header .container .header_nav nav {
+    z-index: 98;
     background: #fff;
+    height: calc(100vh - 130px);
     top: 130px;
     left: -100%;
     position: absolute;
-    max-width: 600px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     -webkit-transition: left 0.5s ease-in-out !important;
