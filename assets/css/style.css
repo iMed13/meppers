@@ -1700,6 +1700,10 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   font-size: 16px;
 }
 
+.index {
+  padding: unset !important;
+}
+
 .index-content {
   min-height: 100vh !important;
   height: 100%;
@@ -1776,7 +1780,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 
 .index-prods .index-main-seeall a {
   width: 145px;
-  margin: 10px auto;
+  margin: 30px auto;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1975,5 +1979,121 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 .index-prods #demos .owl-next:hover:before {
   width: 40px;
   height: 40px;
+}
+
+.main-about {
+  color: #fff !important;
+  padding: 50px;
+  min-height: 400px;
+  height: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main-about .page-nav-title {
+  color: #fff !important;
+}
+
+.main-about .index-aboutus {
+  position: relative;
+  z-index: 9999;
+}
+
+.main-about .text-content {
+  text-align: center;
+}
+
+.main-about:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 55, 73, 0.8);
+}
+
+.main-about .about-readMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+.main-about .about-readMore a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  border: 2px solid grey;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+  text-align: center;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.main-about .about-readMore a:hover:before, .main-about .about-readMore a:hover:after {
+  width: calc( 100% + 4px);
+  height: calc( 100% + 4px);
+}
+
+.main-about .about-readMore a:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-about .about-readMore a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-service {
+  padding: 50px;
+}
+
+.main-service .index-service .service1 {
+  padding: 10px 30px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.main-service .index-service .service1:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 20px -5px #000 !important;
+          box-shadow: 0px 0px 20px -5px #000 !important;
+}
+
+.main-service .index-service .service1 .service-image {
+  text-align: center;
+}
+
+.main-service .index-service .service1 .service-title {
+  padding: 20px 0 !important;
+  color: #C71F43 !important;
 }
 /*# sourceMappingURL=style.css.map */
