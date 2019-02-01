@@ -1,9 +1,14 @@
 // MIX INS
 
 $laptop: 1200px
+$laptop_owl: 1050px
 $laptop_low: 1000px
 $tablet: 768px
 $mobile: 500px
+$iphonefives: 330px
+=iphonefives
+  @media (max-width: #{$iphonefives})
+    @content
 =laptop
   @media (max-width: #{$laptop})
     @content
@@ -15,6 +20,9 @@ $mobile: 500px
     @content
 =laptop_low
   @media (max-width: #{$laptop_low})
+    @content
+=laptop_owl
+  @media (max-width: #{$laptop_owl})
     @content
 // ---------------------------------------------------------
 // ---------------------------------------------------------
@@ -1198,6 +1206,8 @@ footer
             color: #fff
             font-weight: 700
             font-family: dejavu-caps, Proxima-Nova-Extrabold
+            +iphonefives
+                font-size: 70px
                     
     .par-right
         height: 100vh
@@ -1215,10 +1225,57 @@ footer
                 font-size: 18px
                 padding: 20px 0
                 font-weight: 700
+.no-js .owl-carousel, .owl-carousel.owl-loaded
+    margin: 0 auto !important
 .index-prods 
     overflow: unset !important
+    .index-main-seeall
+        a
+            width: 145px
+            margin: 10px auto
+            padding: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 2px solid #c9c7c8
+            color: #C71F43
+            text-decoration: none
+            text-transform: capitalize
+            position: relative
+            text-align: center
+            font-family: dejavu-caps, Proxima-Nova-Extrabold
+            .fa-file-pdf
+                margin-left: 20px
+                font-size: 25px
+                font-weight: normal
+            &:after
+                content: ""
+                position: absolute
+                top: -2px
+                left: -2px
+                width: 20px
+                height: 20px
+                border-color: #C71F43
+                border-style: solid
+                border-width: 2px 0 0 2px
+                transition: all 0.3s
+            &:before
+                content: ""
+                position: absolute
+                bottom: -2px
+                right: -2px
+                width: 20px
+                height: 20px
+                border-color: #C71F43
+                border-style: solid
+                border-width: 0 2px 2px 0 
+                transition: all 0.3s
+            &:hover:before, &:hover:after
+                width: calc( 100% + 4px )
+                height: calc( 100% + 4px )
     #demos
         .item
+            margin: 0 auto !important
             .each-prod-readMore
                 justify-content: center
         .owl-prev
@@ -1231,6 +1288,10 @@ footer
             height: 55px
             background: rgba(252,52,52,0.1)
             border-radius: 100%
+            +laptop_owl
+                left: -40px
+            +mobile
+                left: -28px
             span
                 color: #fff
                 position: relative
@@ -1272,6 +1333,10 @@ footer
             height: 55px
             background: rgba(252,52,52,0.1)
             border-radius: 100%
+            +laptop_owl
+                right: -40px
+            +mobile
+                right: -28px
             span
                 color: #fff
                 position: relative
