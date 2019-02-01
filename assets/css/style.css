@@ -67,6 +67,7 @@ header .container .header_nav {
 
 header .container .header_nav .active_header_menu {
   z-index: 99999;
+  overflow: auto !important;
   left: 50%;
   -webkit-transition: left 0.5s ease-in-out !important;
   transition: left 0.5s ease-in-out !important;
