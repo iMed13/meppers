@@ -9,7 +9,7 @@ function myFunction() {
         $("header").addClass('fixed-head');
         $(".header_logo img").attr("src", "assets/image/black_header-logo.png ");
         $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#0B4460");
-        $(".parallax-window").css("margin-top", "130px");
+        //$(".parallax-window").css("margin-top", "130px");
         $(".index-content").css("margin-top", "0px");
         $(".burger-nav").css("color", "#0B4460");
         $("header").css("padding", "15px 0");
@@ -21,7 +21,7 @@ function myFunction() {
         $("header .header_nav ul li a, .headersearch-btn .fas").css("color", "#fff");
         $(".burger-nav").css("color", "#fff");
         $("header").css("padding", "40px 0");
-        $(".parallax-window").css("margin-top", "unset");
+        //$(".parallax-window").css("margin-top", "unset");
         $(".index-content").css("margin-top", "unset");
         $(".index-content").prev().css("background", "transparent");
         $(".index-content").prev().find(".header_logo img").attr("src", "assets/image/header-logo.png ");
