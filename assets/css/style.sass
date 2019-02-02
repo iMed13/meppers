@@ -194,7 +194,7 @@ header
                         +mobile
                             padding: 2px 10px
                         a
-                            font-family: BPG-DejaVu-San
+                            font-family: menu-bpg
                             color: #fff
                             font-size: 15px
                             font-weight: 400
@@ -299,19 +299,19 @@ main
             font-family: dejavu-caps, Proxima-Nova-Extrabold
             padding: 50px 0
     .news
+        padding: 20px 0
         .each-news
             position: relative
             margin: 20px 0
             &:hover .each-news-readMore a:before, &:hover .each-news-readMore a:after
                     width: calc( 100% + 4px )
                     height: calc( 100% + 4px )
-            &:hover
-                transition: margin-top  0.3s !important
-                top: -10px
             .each-news-content
                 background: #fff
                 position: relative
+                transition: all  0.2s ease-in-out !important
                 &:hover
+                    margin-top: -10px
                     transition: 0.2s ease-in-out
                     box-shadow: 0px 0px 10px 0px #000 !important
             .each-news-image
@@ -422,6 +422,16 @@ footer
         align-items: center
         font-size: 15px
         font-family: dejavu-caps, Proxima-Nova-Extrabold
+        div
+            +laptop_low
+                text-align: center
+                display: flex
+                justify-content: center !important
+        .createdby
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            padding: 20px 0
     .social-title
         font-size: 20px
         color: #fff
@@ -532,12 +542,12 @@ footer
         
         position: relative
         margin: 20px 0
+        transition: all  0.5s !important
         &:hover .each-prod-readMore a:before, &:hover .each-prod-readMore a:after
                 width: calc( 100% + 4px )
                 height: calc( 100% + 4px )
         &:hover
-            transition: margin-top  0.3s !important
-            top: -10px
+            margin-top: -10px
         .each-prod-content
             background: #fff !important
             position: relative
@@ -1015,8 +1025,6 @@ footer
             color: #C71F43
             font-family: dejavu-caps, Proxima-Nova-Extrabold
 
-
-
 //11.Aboutus-----------------------------------------------
 .aboutus
     h1
@@ -1123,8 +1131,7 @@ footer
                             right: 5px !important
     .prodcuts-choosen-prod-content
         +laptop_low
-            margin: 20px 0 !important
-        box-shadow: 0px 0px 10px 0px #f5f4f4 
+            margin: 20px 0 !important 
         .each-prod-content
             border: 1px solid #f5f4f4
             &:hover
@@ -1138,7 +1145,6 @@ footer
     .choosen-product
         +laptop_low
             margin: 20px 0
-        box-shadow: 0px 0px 10px 0px #f5f4f4 
         display: flex
         justify-content: center
         .each-prod-content
@@ -1468,18 +1474,31 @@ footer
     padding: 50px
     .index-service
         .service1
-            &:hover 
-                transition: 0.2s ease-in-out
-                box-shadow: 0px 0px 20px -5px #000 !important
-            padding: 10px 30px
+            padding: 50px 30px
             margin: 10px 0
             cursor: pointer
+            transition: all 0.5s 
+            border-radius: 10px
+            box-shadow: 0px 0px 20px -5px #000
+            &:hover
+                margin-top: -10px
+                box-shadow: 0px 0px 30px -5px #C71F43 !important
+            
             .service-image
                 text-align: center
+                img
+                    filter: grayscale(1)
+                    transition: all 0.6s
+            
+            &:hover img
+                filter: grayscale(0)
+
             .service-title
+                font-size: 25px
                 padding: 20px 0 !important
                 color: #C71F43 !important
 .main-partneer
+    min-height: 400px
     background: linear-gradient(52deg, #ed1c24 0%, #cb2a30 30%, #802e3c 70%, #572f36 100%)
     .index-partneer
         overflow: unset !important
@@ -1491,7 +1510,7 @@ footer
             z-index: 99
             width: 50px
             height: 50px
-            background: rgba(255,255,255,0.1)
+            background: rgba(255,255,255,0.2)
             border-radius: 100%
             &:after
                 content: ""
@@ -1501,19 +1520,22 @@ footer
                 transform: translate(-50%, -50%)
                 width: 35px
                 height: 35px
-                background: rgba(255,255,255,0.2)
+                background: rgba(255,255,255,0.3)
                 border-radius: 100%
             &:before
                 content: ""
                 position: absolute
+                text-align: center
                 top: 50%
                 left: 50%
+                color: red !important
                 transform: translate(-50%, -50%) 
                 transition: all 0.5s
                 width: 20px
                 height: 20px
                 background: rgba(255,255,255, 0.8)
                 border-radius: 100%
+
             &:hover:before
                 width: 35px
                 height: 35px
@@ -1536,6 +1558,7 @@ footer
                 border-radius: 100%
             &:before
                 content: ""
+                color: red
                 position: absolute
                 top: 50%
                 left: 50%
@@ -1549,7 +1572,12 @@ footer
                 width: 35px
                 height: 35px
         div
+            padding: 20px 0
+            &:hover>.partner-img
+                margin-top: -10px !important
+                background: #fff
             .partner-img
+                border-radius: 10px
                 width: 150px
                 height: 150px
                 margin: 10px auto !important
@@ -1559,14 +1587,26 @@ footer
                 line-height: 100px
                 padding: 2%
                 position: relative
-                text-align: center
+                display: flex
+                justify-content: center
+                align-items: center
+                overflow: hidden
+                transition: all 0.5s
+                img
+                    filter: grayscale(1)
+                    max-width: 100%
+            &:hover>img
+                filter: grayscale(0)
+
             
 .projects
     .each-project
+        +laptop_low
+            height: 600px
         .project-image
             height: 590px
             position: relative
-            +tablet
+            +laptop_low
                 height: 400px
 
             &:after
@@ -1582,17 +1622,21 @@ footer
             height: 590px
             display: flex
             align-items: center
-            +tablet
+            +laptop_low
                 position: relative
                 width: 95%
                 margin: 0 auto
                 top: -200px
+            +mobile
+                width: 99% !important
             .right-back
                 width: 100%
                 height: 500px
                 background: #C71F43
-                +tablet
+                +laptop_low
                     height: 400px
+                +mobile
+                    height: fit-content !important
                 .project-content
                     background: #fff
                     width: 100%
@@ -1600,7 +1644,7 @@ footer
                     transform: translateY(-50%)
                     position: relative
                     left: -50px
-                    +tablet
+                    +laptop_low
                         left: unset
                         width: 85%
                         top: 100px
@@ -1615,6 +1659,10 @@ footer
                             text-transform: uppercase
                             padding: 15px 15px 15px 50px
                             color: #fff
+                            +mobile
+                                padding: unset
+                                padding: 15px 0
+                                width: 100%
                         .unended
                             background: #0B4460
                             text-align: right
@@ -1624,17 +1672,32 @@ footer
                             text-transform: uppercase
                             padding: 15px 15px 15px 50px
                             color: #fff
+                            +mobile
+                                padding: unset
+                                text-align: center
+                                padding: 15px 0
+                                width: 100%
                     .proj-title
                         color: #0B4460
                         font-size: 25px
                         font-family: dejavu-caps, Proxima-Nova-Extrabold
                         padding: 50px
+                        +mobile
+                            padding: unset
+                            text-align: center
                         
                     .proj-text
                         padding: 0 50px 10px 50px
                         font-family: BPG-DejaVu-San
+                        text-align: justify
+                        +mobile
+                            padding: 10px
                     .readmore
                         padding: 20px 50px
+                        +mobile
+                            padding: 10px 0
+                            display: flex
+                            justify-content: center
                         a
                             display: block
                             width: fit-content
