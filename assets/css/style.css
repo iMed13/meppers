@@ -1705,6 +1705,10 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   font-size: 16px;
 }
 
+.owl-stage-outer {
+  padding: 50px 0 !important;
+}
+
 .index {
   padding: unset !important;
 }
@@ -2209,5 +2213,168 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
   padding: 2%;
   position: relative;
   text-align: center;
+}
+
+.projects .each-project .project-image {
+  height: 590px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .projects .each-project .project-image {
+    height: 400px;
+  }
+}
+
+.projects .each-project .project-image:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: calc(100% + 2px);
+  height: 20%;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+          clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.projects .each-project .right-content {
+  height: 590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .projects .each-project .right-content {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    top: -200px;
+  }
+}
+
+.projects .each-project .right-content .right-back {
+  width: 100%;
+  height: 500px;
+  background: #C71F43;
+}
+
+@media (max-width: 768px) {
+  .projects .each-project .right-content .right-back {
+    height: 400px;
+  }
+}
+
+.projects .each-project .right-content .right-back .project-content {
+  background: #fff;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: relative;
+  left: -50px;
+}
+
+@media (max-width: 768px) {
+  .projects .each-project .right-content .right-back .project-content {
+    left: unset;
+    width: 85%;
+    top: 100px;
+    margin: 0 auto;
+  }
+}
+
+.projects .each-project .right-content .right-back .project-content .about-proj .ended {
+  background: #c71f43;
+  text-align: right;
+  top: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  padding: 15px 15px 15px 50px;
+  color: #fff;
+}
+
+.projects .each-project .right-content .right-back .project-content .about-proj .unended {
+  background: #0B4460;
+  text-align: right;
+  top: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  padding: 15px 15px 15px 50px;
+  color: #fff;
+}
+
+.projects .each-project .right-content .right-back .project-content .proj-title {
+  color: #0B4460;
+  font-size: 25px;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+  padding: 50px;
+}
+
+.projects .each-project .right-content .right-back .project-content .proj-text {
+  padding: 0 50px 10px 50px;
+  font-family: BPG-DejaVu-San;
+}
+
+.projects .each-project .right-content .right-back .project-content .readmore {
+  padding: 20px 50px;
+}
+
+.projects .each-project .right-content .right-back .project-content .readmore a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  border: 2px solid #c9c7c8;
+  color: #C71F43;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+  text-align: center;
+  font-family: dejavu-caps, Proxima-Nova-Extrabold;
+}
+
+.projects .each-project .right-content .right-back .project-content .readmore a:hover:before, .projects .each-project .right-content .right-back .project-content .readmore a:hover:after {
+  width: calc( 100% + 4px);
+  height: calc( 100% + 4px);
+}
+
+.projects .each-project .right-content .right-back .project-content .readmore a:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  border-color: #C71F43;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.projects .each-project .right-content .right-back .project-content .readmore a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  border-color: #C71F43;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

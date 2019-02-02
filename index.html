@@ -84,7 +84,7 @@
             <section class="container index-prods products">
                 <h1 class="page-nav-title" data-aos="zoom-in">ჩვენი პროდუქცია</h1>
                 <section id="demos" class="header-slider">
-                    <div class="owl-carousel owl-theme row">
+                    <div class="owl-carousel owl-theme owl-product row">
                         <!-- --product 1- -->
                         <section class="col-lg-12 col-md-10  col-sm-8  col-xs-10 each-prods item" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-back">
                             <div class="each-prod-content">
@@ -217,7 +217,7 @@
             <h1 class="page-nav-title" data-aos="zoom-in">სიახლეები</h1>
             <section id="demos" class="header-slider">
                 <div class="owl-carousel owl-theme row">
-                    <!-- --product 1- -->
+                    <!-- --news 1- -->
 
                     <section class="col-lg-12 col-md-10  col-sm-8  col-xs-10 each-news item" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-back">
                         <div class="each-news-content">
@@ -235,7 +235,7 @@
                             <div class="each-news-readMore"><a href="single-news.html">სრულად</a></div>
                         </div>
                     </section>
-                    <!-- --product 2- -->
+                    <!-- --news 2- -->
 
                     <section class="col-lg-12 col-md-10  col-sm-8  col-xs-10 each-news item" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-back">
                         <div class="each-news-content">
@@ -253,7 +253,7 @@
                             <div class="each-news-readMore"><a href="single-news.html">სრულად</a></div>
                         </div>
                     </section>
-                    <!-- --product 3- -->
+                    <!-- --news 3- -->
 
                     <section class="col-lg-12 col-md-10  col-sm-8  col-xs-10 each-news item" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-back">
                         <div class="each-news-content">
@@ -271,7 +271,7 @@
                             <div class="each-news-readMore"><a href="single-news.html">სრულად</a></div>
                         </div>
                     </section>
-                    <!-- --product 4- -->
+                    <!-- --news 4- -->
 
                     <section class="col-lg-12 col-md-10  col-sm-8  col-xs-10 each-news item" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-back">
                         <div class="each-news-content">
@@ -298,6 +298,53 @@
         </section>
 
         <!-- -------------------Main projects--------------------------- -->
+        <section class="container index-prods projects">
+            <h1 class="page-nav-title" data-aos="zoom-in">ჩვენი პროექტები</h1>
+            <section id="demos" class="header-slider">
+                <div class="owl-carousel owl-theme owl-project row">
+                    <!-- -------project 1-------- -->
+                    <section class="col-lg-12 row each-project item">
+                        <div class="project-image col-lg-6" style="background: url(assets/image/each-news-image.jpg) no-repeat center/cover">
+                        </div>
+                        <div class="right-content col-lg-6">
+                            <div class="right-back">
+                                <div class="project-content">
+                                    <div class="proj-title">სათაური</div>
+                                    <div class="about-proj">
+                                        <p class="unended">მიმდინარე პროექტი</p>
+                                    </div>
+                                    <div class="proj-text">Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</div>
+                                    <div class="readmore"><a href="single-projects.html">სრულად</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- -------project 2-------- -->
+                    <section class="col-lg-12 row each-project item">
+                        <div class="project-image col-lg-6" style="background: url(assets/image/each-news-image.jpg) no-repeat center/cover">
+                        </div>
+                        <div class="right-content col-lg-6">
+                            <div class="right-back">
+                                <div class="project-content">
+                                    <div class="proj-title">სათაური</div>
+                                    <div class="about-proj">
+                                        <p class="ended">მიმდინარე პროექტი</p>
+                                    </div>
+                                    <div class="proj-text">Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</div>
+                                    <div class="readmore"><a href="single-projects.html">სრულად</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="col-lg-12">
+                <div class="index-main-seeall"><a href="news.html">ყველა</a></div>
+            </section>
+        </section>
+
+
     </main>
 
 
@@ -348,7 +395,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
     <script>
         $(document).ready(function() {
-                var owl = $('.owl-carousel');
+                var owl = $('.owl-product');
                 owl.owlCarousel({
                     nav: true,
                     loop: true,
@@ -403,6 +450,18 @@
                 }
             }]
         });
+        $(document).ready(function() {
+                var owl = $('.owl-project');
+                owl.owlCarousel({
+                    nav: true,
+                    loop: true,
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                })
+            }
+
+        );
     </script>
 
     <!-- vendors -->
