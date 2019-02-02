@@ -68,6 +68,11 @@ header .container {
           align-items: center;
 }
 
+header .container .header_logo {
+  position: relative;
+  z-index: 99999999999999;
+}
+
 header .container .header_logo img {
   height: 50px;
 }
@@ -2152,6 +2157,7 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 }
 
 .main-partneer .page-nav-title {
+  font-size: 35px;
   color: #fff !important;
 }
 
@@ -2285,6 +2291,20 @@ footer .address-cont .addr .fas, footer .address-cont .phone .fas {
 .main-partneer .partneer-slider div:hover > img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+@media (max-width: 1000px) {
+  .owl-news .owl-prev {
+    top: 37%  !important;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .owl-news .owl-next {
+    top: 37%  !important;
+    right: 0 !important;
+  }
 }
 
 @media (max-width: 1000px) {

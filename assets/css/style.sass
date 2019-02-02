@@ -93,6 +93,8 @@ header
         justify-content: space-between
         align-items: center
         .header_logo
+            position: relative
+            z-index: 99999999999999
             img
                 height: 50px
 
@@ -1503,6 +1505,7 @@ footer
     .index-partneer
         overflow: unset !important
     .page-nav-title
+        font-size: 35px
         color: #fff !important
     .partneer-slider
         .slick-prev
@@ -1597,8 +1600,16 @@ footer
                     max-width: 100%
             &:hover>img
                 filter: grayscale(0)
-
-            
+.owl-news
+    .owl-prev
+        +laptop_low
+            top: 37%  !important
+            left: 0 !important
+    
+    .owl-next
+        +laptop_low
+            top: 37%  !important
+            right: 0 !important
 .projects
     .each-project
         +laptop_low
