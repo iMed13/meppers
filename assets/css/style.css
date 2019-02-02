@@ -112,8 +112,8 @@ header .container .header_nav nav {
   header .container .header_nav nav {
     z-index: 98;
     background: #fff;
-    height: calc(100vh - 130px);
-    top: 130px;
+    height: 100vh;
+    top: 0;
     left: -100%;
     position: absolute;
     -webkit-transform: translateX(-50%);
@@ -314,12 +314,18 @@ header .container .header_nav nav ul li a {
   }
 }
 
+header .container .header_nav .active_burger {
+  color: #011d26 !important;
+}
+
 header .container .header_nav .burger-nav {
   margin: 0 10px;
   font-size: 20px;
   color: #fff;
   display: none;
   cursor: pointer;
+  position: relative;
+  z-index: 9999999999;
 }
 
 @media (max-width: 1200px) {
@@ -424,7 +430,6 @@ main .news .each-news .each-news-content:hover {
 
 main .news .each-news .each-news-image {
   height: 250px;
-  background: red;
   overflow: hidden;
 }
 

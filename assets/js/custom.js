@@ -76,6 +76,7 @@ $(".single-gallery .prev").click(function() {
 
 $(".burger-nav").click(function() {
     $("header .header_nav nav").toggleClass("active_header_menu");
+    $(this).toggleClass("active_burger");
 });
 // --------------Project tab click----------------------
 $(".prod-nav li a").click(function() {

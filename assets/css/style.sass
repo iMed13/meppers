@@ -117,8 +117,8 @@ header
                 +laptop
                     z-index: 98
                     background: #fff
-                    height: calc(100vh - 130px)
-                    top: 130px
+                    height: 100vh
+                    top: 0
                     left: -100%
                     position: absolute
                     transform: translateX(-50%)
@@ -236,12 +236,16 @@ header
                             
                             +mobile
                                 padding: 5px 20px
+            .active_burger
+                color: #011d26 !important
             .burger-nav
                 margin: 0 10px
                 font-size: 20px 
                 color: #fff
                 display: none
                 cursor: pointer
+                position: relative
+                z-index: 9999999999
                 +laptop
                     display: block !important
 
@@ -312,7 +316,6 @@ main
                     box-shadow: 0px 0px 10px 0px #000 !important
             .each-news-image
                 height: 250px
-                background: red
                 overflow: hidden
                 img
                     object-fit: cover
